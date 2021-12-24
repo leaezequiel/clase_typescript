@@ -12,14 +12,14 @@ function getData() {
     }
     //document.body.removeChild(document.getElementById("aviso"));
     if (name == "") {
-        document.getElementById("name").focus;
+        document.getElementById("nombre").focus;
         var mensaje = document.createElement('h1');
         mensaje.textContent = "completa el nombre, por favor";
         mensaje.setAttribute("id", "aviso");
         document.body.appendChild(mensaje);
     }
     if (age == "") {
-        document.getElementById("age").focus;
+        document.getElementById("edad").focus;
         var mensaje = document.createElement('h1');
         mensaje.textContent = "completa la edad, por favor";
         mensaje.setAttribute("id", "aviso");
