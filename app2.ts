@@ -2,6 +2,15 @@ function getData() {
     var name =(<HTMLInputElement> document.getElementById("nombre")).value;
     var age = (<HTMLInputElement>document.getElementById("edad")).value;
 
+    try {
+        // código...
+        if (document.body.children.namedItem("aviso") != null)
+            document.body.removeChild(document.getElementById("aviso"));
+    } catch (err) {
+
+        // manipulación de error
+        console.log("no hubo error anteriormente");
+    }
     
     //document.body.removeChild(document.getElementById("aviso"));
     if (name == "") {
